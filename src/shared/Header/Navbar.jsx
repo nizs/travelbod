@@ -5,7 +5,7 @@ import logo from '../../../../../project_plan/project_images/TravelBod_logo.svg'
 const Navbar = () => {
     const menuitem = <>
         <li className='mr-2 font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/home'>Home</Link></li>
-        <li className='mr-2 font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link>Tours</Link></li>
+        <li className='mr-2 font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/tours'>Tours</Link></li>
         <li className='mr-2 font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link>Events</Link></li>
         <li className='mr-2 font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/about'>About</Link></li>
         <li className='font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link>Contact</Link></li>

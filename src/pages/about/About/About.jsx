@@ -1,6 +1,6 @@
 import React from 'react';
-import aboutimg1 from '../../../../src/assets/project_images/carousel_img_1.jpg';
-import aboutimg2 from '../../../../src/assets/project_images/carousel_img_2.jpg';
+import aboutimg1 from '../../../../src/assets/project_images/carousel/carousel_img_1.jpg';
+import aboutimg2 from '../../../../src/assets/project_images/carousel/carousel_img_2.jpg';
 import { MdVerified } from "react-icons/md";
 import { MdOutlineHealthAndSafety, MdPriceCheck, MdOutlineAirplaneTicket } from "react-icons/md";
 
