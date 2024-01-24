@@ -3,6 +3,7 @@ import MainLayout from '../../src/layout/MainLayout';
 import Home from "../pages/home/Home/Home";
 import About from "../pages/about/About/About";
 import Tours from "../pages/tours/Tours/Tours";
+import TourD from "../pages/tours/TourD/TourD";
 
 
 const router = createBrowserRouter([
@@ -25,7 +26,12 @@ const router = createBrowserRouter([
             {
                 path: 'tours',
                 element: <Tours />
-            }
+            },
+            {
+                path: 'tours/:id',
+                element: <TourD />,
+                loader: ({ params }) => fetch(`http://localhost:5000/tours/${params.id}`)
+            },
         ]
     }
 ]);
