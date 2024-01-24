@@ -8,6 +8,7 @@ import { AiOutlineDollar } from "react-icons/ai";
 import { GiAlarmClock } from "react-icons/gi";
 import { IoAirplaneOutline } from "react-icons/io5";
 import ReactStars from "react-rating-stars-component";
+import TourDinfo from './TourDinfo';
 
 const TourD = () => {
     const details = useLoaderData();
@@ -55,7 +56,7 @@ const TourD = () => {
             </div>
 
             {/* ratings and social share */}
-            <div className='lg:flex justify-between bg-white p-4 md:px-8'>
+            <div className='lg:flex justify-between bg-white p-4 border-b-[1px] border-solid border-[#e1e1e1] md:px-8'>
                 <div className='flex items-center'>
                     <ReactStars
                         count={5}
@@ -86,7 +87,7 @@ const TourD = () => {
                     </div>
                 </div>
             </div>
-
+            <TourDinfo details={details} />
         </div>
 
     );
