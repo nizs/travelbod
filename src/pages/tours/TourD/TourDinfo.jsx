@@ -7,6 +7,7 @@ import { FaCarSide } from "react-icons/fa";
 import { RiCoupon2Fill } from "react-icons/ri";
 import { RxIdCard } from "react-icons/rx";
 import { IoLogoNoSmoking } from "react-icons/io";
+import { FaCartArrowDown } from "react-icons/fa";
 
 const TourDinfo = ({ details }) => {
     const { img, include1, include2, include3, include4, Exclude1, Exclude2, Exclude3, Exclude4, Cards, parking, coupons, reservations, restaurant, smoking } = details;
@@ -57,8 +58,8 @@ const TourDinfo = ({ details }) => {
                 </div>
                 {/* Tour Amenities */}
                 <div className='my-6'>
-                    <h3 className='text-2xl font-bold my-2'>Tour Amenities</h3>
-                    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 border-b-[1px] border-solid border-[#e1e1e1] md:flex-row'>
+                    <h3 className='text-3xl font-bold my-2'>Tour Amenities</h3>
+                    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:flex-row'>
                         <ul className='mb-4 '>
                             <li className='flex items-center my-4'><span><HiCreditCard className='text-4xl mr-2 text-[#64ab45]' /></span><span className='text-[#82828A]'>{Cards}</span></li>
                             <li className='flex items-center my-4'><span><FaCarSide className='text-4xl mr-2 text-[#64ab45]' /></span><span className='text-[#82828A]'>{parking}</span></li>
@@ -75,25 +76,64 @@ const TourDinfo = ({ details }) => {
                         </ul>
                     </div>
                 </div>
+                {/* Tour Accordion */}
+                <div>
+                    <h3 className='text-3xl font-bold my-8'>Tour Plan</h3>
+                    <div className="collapse collapse-arrow bg-base-200 mb-6 ">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div className="collapse-title text-xl font-medium">
+                        Day 1st
+                        </div>
+                        <div className="collapse-content">
+                            <p>Lorem ipsum dolor sit amet, utinam munere antiopam vel ad. Qui eros iusto te. Nec ad feugiat honestatis. Quo illum detraxit an. Ius eius quodsi molestiae at, nostrum definitiones his cu. Discere referrentur mea id, an pri novum possim deterruisset.</p>
+                        </div>
+                    </div>
+                    <div className="collapse collapse-arrow bg-base-200 mb-6">
+                        <input type="radio" name="my-accordion-2" />
+                        <div className="collapse-title text-xl font-medium">
+                        Day 2nd
+                        </div>
+                        <div className="collapse-content">
+                            <p>Lorem ipsum dolor sit amet, utinam munere antiopam vel ad. Qui eros iusto te. Nec ad feugiat honestatis. Quo illum detraxit an. Ius eius quodsi molestiae at, nostrum definitiones his cu. Discere referrentur mea id, an pri novum possim deterruisset.</p>
+                        </div>
+                    </div>
+                    <div className="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" />
+                        <div className="collapse-title text-xl font-medium">
+                        Day 3rd
+                        </div>
+                        <div className="collapse-content">
+                            <p>Lorem ipsum dolor sit amet, utinam munere antiopam vel ad. Qui eros iusto te. Nec ad feugiat honestatis. Quo illum detraxit an. Ius eius quodsi molestiae at, nostrum definitiones his cu. Discere referrentur mea id, an pri novum possim deterruisset.</p>
+                        </div>
+                    </div>
+                </div>
+                {/* Tour Location */}
+                <div>
+                    <h3 className='text-3xl font-bold my-8'>Location</h3>
+                    <iframe className='w-full' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.670397597713!2d-73.9906705!3d40.7032562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a31142b2c19%3A0xa192819c77f4c7a5!2sMain%20St%2C%20Brooklyn%2C%20NY%2011201%2C%20USA!5e0!3m2!1sen!2sbd!4v1706169483253!5m2!1sen!2sbd" height="400" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
+            
+            {/* page sidebar */}
             <div className=''>
                 {/* services page sidebar component  */}
-                <div className='bg-purple-200 p-8 md:p-4 rounded'>
-                    <h2>Booking Tour</h2>
+                <div className='bg-[#F3F8F6] p-8 md:p-4 lg:p-8 rounded'>
+                    <h2 className='text-[20px] font-semibold border-l-[2px] border-solid border-[#64ab45] px-4'> Booking Tour</h2>
                     <div className='my-8'>
                         <Link>
-                            <button className=" w-full btn bg-purple-700 hover:bg-purple-600 rounded border-0  text-white">Book Now</button>
+                            <button className=" w-full btn bg-[#64ab45] hover:bg-[#82d75d] rounded border-0  text-white text-[17px]">
+                            <FaCartArrowDown />Book Now</button>
                         </Link>
                     </div>
                 </div>
                 {/* Download info sidebar component */}
-                <div className='bg-slate-900 my-8 p-8 rounded'>
+                {/* <div className='bg-slate-900 my-8 p-8 rounded'>
                     <h2>Tour information</h2>
-                </div>
+                </div> */}
                 {/* quote/help sidebar component */}
-                <div className='bg-slate-900 my-4 p-8 rounded'>
+                {/* <div className='bg-slate-900 my-4 p-8 rounded'>
                     <h2>Last Minuite Deals</h2>
-                </div>
+                </div> */}
             </div>
         </div>
     );

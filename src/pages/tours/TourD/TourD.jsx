@@ -19,7 +19,7 @@ const TourD = () => {
             {/* header and price */}
             <div className='lg:flex justify-between py-8 px-4 md:px-8 bg-[#F3F8F6]'>
                 <div>
-                    <h1 className='text-[26px] font-semibold'>{title}</h1>
+                    <h1 className='text-[28px] font-bold'>{title}</h1>
                     <p className='flex items-center'>
                         <span className='mr-2'>
                             <FaLocationDot className='text-[#64ab45]' />
@@ -45,7 +45,7 @@ const TourD = () => {
                             <p className='text-[16px] font-semibold'>{duration}</p>
                         </div>
                     </div>
-                    <div className='flex items-center mr-8'>
+                    <div className='flex items-center mr-8 mt-4 md:mt-0'>
                         <IoAirplaneOutline className='mr-2 text-4xl text-[#64ab45]' />
                         <div>
                             <h4 className='text-[#82828A]'>Tour Type</h4>
