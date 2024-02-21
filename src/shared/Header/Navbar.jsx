@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../../../project_plan/project_images/TravelBod_logo.svg';
+import { AuthContext } from '../provider/AuthProvider';
+import { FaRegUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
+    const { user, logoutUser } = useContext(AuthContext);
     const menuitem = <>
-        <li className='mr-2 font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/home'>Home</Link></li>
-        <li className='mr-2 font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/tours'>Tours</Link></li>
-        <li className='mr-2 font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link>Events</Link></li>
-        <li className='mr-2 font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/about'>About</Link></li>
-        <li className='font-bold text-base text-slate-500 hover:text-white hover:bg-[#64ab45] hover:rounded'><Link>Contact</Link></li>
+        <li className='mr-2 font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/home'>Home</Link></li>
+        <li className='mr-2 font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/tours'>Tours</Link></li>
+        <li className='mr-2 font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/destinations'>Destination</Link></li>
+        <li className='mr-2 font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/about'>About</Link></li>
+        <li className='font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link>Contact</Link></li>
     </>
+    const handleLogoutuser = () => {
+        logoutUser();
+    }
     return (
         <div className="navbar bg-base-100 py-4">
             <div className='container mx-auto'>
@@ -38,25 +44,41 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar hover:bg-[#64ab45]">
-                        <div className="w-10 rounded-full">
-                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                        </div>
-                    </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 w-52">
-                        <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'>
-                            <a className="justify-between">
-                                Profile
-                                <span className="badge bg-[#64ab45] text-white">New</span>
-                            </a>
-                        </li>
-                        <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Settings</a></li>
-                        <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Logout</a></li>
-                    </ul>
+                    {
+                        user?.displayName ?
+                            <>
+                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar hover:bg-[#64ab45] mx-2">
+                                    <div className="w-10 rounded-full">
+                                        <img alt="Tailwind CSS Navbar component" src={user.photoURL} />
+                                    </div>
+                                </div>
+                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 w-52">
+                                    <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'>
+                                        <a className="justify-between">
+                                            Profile
+                                            <span className="badge">New</span>
+                                        </a>
+                                    </li>
+                                    <Link to='/bookings'>
+                                        <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>My Bookings</a></li>
+                                    </Link>
+                                    <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Settings</a></li>
+                                    <li onClick={handleLogoutuser} className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Logout</a></li>
+                                </ul>
+                            </>
+                            :
+                            <div className='flex'>
+                                <div className="rounded-full flex justify-center items-center">
+                                    <FaRegUserCircle className='text-3xl text-[#64ab45] mx-2' />
+                                    <Link to='/login'>
+                                        <button className="btn text-white text-[17px] bg-[#64ab45] hover:bg-[#82d75d]">Login</button>
+                                    </Link>
+                                </div>
+                            </div>
+                    }
                 </div>
             </div>
-
-        </div>
+        </div >
     );
 };
 

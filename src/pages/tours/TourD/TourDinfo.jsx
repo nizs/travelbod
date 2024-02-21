@@ -7,10 +7,12 @@ import { FaCarSide } from "react-icons/fa";
 import { RiCoupon2Fill } from "react-icons/ri";
 import { RxIdCard } from "react-icons/rx";
 import { IoLogoNoSmoking } from "react-icons/io";
-import { FaCartArrowDown } from "react-icons/fa";
+// import { FaCartArrowDown } from "react-icons/fa";
+import { MdOutlineShoppingCartCheckout } from "react-icons/md";
+import Checkout from '../../checkout/Checkout/Checkout';
 
 const TourDinfo = ({ details }) => {
-    const { img, include1, include2, include3, include4, Exclude1, Exclude2, Exclude3, Exclude4, Cards, parking, coupons, reservations, restaurant, smoking } = details;
+    const { _id, img, include1, include2, include3, include4, Exclude1, Exclude2, Exclude3, Exclude4, Cards, parking, coupons, reservations, restaurant, smoking } = details;
     return (
         <div className='grid md:grid-cols-3 gap-4 px-4 py-16 md:px-8'>
             <div className='md:col-span-2'>
@@ -116,16 +118,17 @@ const TourDinfo = ({ details }) => {
             
             {/* page sidebar */}
             <div className=''>
+                <Checkout />
                 {/* services page sidebar component  */}
-                <div className='bg-[#F3F8F6] p-8 md:p-4 lg:p-8 rounded'>
+                {/* <div className='bg-[#F3F8F6] p-8 md:p-4 lg:p-8 rounded'>
                     <h2 className='text-[20px] font-semibold border-l-[2px] border-solid border-[#64ab45] px-4'> Booking Tour</h2>
                     <div className='my-8'>
-                        <Link>
+                        <Link to={`/checkout/${_id}`}>
                             <button className=" w-full btn bg-[#64ab45] hover:bg-[#82d75d] rounded border-0  text-white text-[17px]">
-                            <FaCartArrowDown />Book Now</button>
+                            <MdOutlineShoppingCartCheckout  />Checkout</button>
                         </Link>
                     </div>
-                </div>
+                </div> */}
                 {/* Download info sidebar component */}
                 {/* <div className='bg-slate-900 my-8 p-8 rounded'>
                     <h2>Tour information</h2>

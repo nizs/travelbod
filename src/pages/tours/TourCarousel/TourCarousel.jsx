@@ -16,7 +16,7 @@ export default function TourCarousel() {
     const [swiperRef, setSwiperRef] = useState(null);
     const [carousel, setcarousel] = useState([]);
     useEffect(() => {
-        fetch('../../../../public/data/carouselD.json')
+        fetch('http://localhost:5000/carouselsd')
             .then(res => res.json())
             .then(data => setcarousel(data))
     }, [])
@@ -25,11 +25,11 @@ export default function TourCarousel() {
             <Swiper
                 onSwiper={setSwiperRef}
                 slidesPerView={4}
-                centeredSlides={false}
+                loop={true}
                 spaceBetween={30}
                 navigation={true}
                 modules={[Navigation]}
-                className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             >
                 {
                     carousel.map(slide => <SwiperSlide

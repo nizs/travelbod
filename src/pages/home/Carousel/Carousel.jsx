@@ -5,7 +5,7 @@ const Carousel = () => {
     const [banners, setBanners] = useState([]);
 
     useEffect(() => {
-        fetch('../../../../public/data/carousel.json')
+        fetch('http://localhost:5000/carousels')
             .then(res => res.json())
             .then(data => setBanners(data))
     }, [])
@@ -14,7 +14,7 @@ const Carousel = () => {
         <div className='carousel w-full lg:h-[650px]'>
             {
                 banners.map(banner => <Banner
-                    key={banner.id}
+                    key={banner._id}
                     banner={banner}
                 ></Banner>)
             }
