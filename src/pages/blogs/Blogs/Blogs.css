@@ -1,0 +1,13 @@
+.traveslider{
+    height: auto !important;
+}
+
+.travelgrid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+
+.backimg {
+    background-image: url('https://i.ibb.co/2ggVX2F/carousel-img-1.jpg');
+    padding: 60px 0px;
+}

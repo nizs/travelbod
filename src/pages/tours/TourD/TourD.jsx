@@ -13,6 +13,7 @@ import TourDinfo from './TourDinfo';
 const TourD = () => {
     const details = useLoaderData();
     const { _id, title, location, price, duration, type, img, include1, include2, include3, include4, Exclude1, Exclude2, Exclude3, Exclude4, Cards, parking, coupons, reservations, restaurant, smoking } = details;
+    
     return (
         <div className=''>
             <TourCarousel />

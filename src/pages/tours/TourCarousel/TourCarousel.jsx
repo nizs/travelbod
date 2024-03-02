@@ -26,8 +26,27 @@ export default function TourCarousel() {
                 onSwiper={setSwiperRef}
                 slidesPerView={4}
                 loop={true}
-                spaceBetween={30}
+                spaceBetween={25}
                 navigation={true}
+                breakpoints={
+                    {
+                        320: {
+                            slidesPerView: 1
+                        },
+                        375: {
+                            slidesPerView: 1
+                        },
+                        425: {
+                            slidesPerView: 1
+                        },
+                        768: {
+                            slidesPerView: 2
+                        },
+                        1024: {
+                            slidesPerView: 4
+                        }
+                    }
+                }
                 modules={[Navigation]}
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             >

@@ -13,9 +13,10 @@ import Checkout from '../../checkout/Checkout/Checkout';
 
 const TourDinfo = ({ details }) => {
     const { _id, img, include1, include2, include3, include4, Exclude1, Exclude2, Exclude3, Exclude4, Cards, parking, coupons, reservations, restaurant, smoking } = details;
+    
     return (
         <div className='grid md:grid-cols-3 gap-4 px-4 py-16 md:px-8'>
-            <div className='md:col-span-2'>
+            <div className='md:col-span-3 lg:col-span-2'>
                 {/* title & tour description */}
                 <div>
                     <h2 className='text-3xl font-bold my-4'>Explore Tour</h2>
@@ -117,7 +118,7 @@ const TourDinfo = ({ details }) => {
             </div>
             
             {/* page sidebar */}
-            <div className=''>
+            <div className='md:col-span-3 lg:col-span-1'>
                 <Checkout />
                 {/* services page sidebar component  */}
                 {/* <div className='bg-[#F3F8F6] p-8 md:p-4 lg:p-8 rounded'>

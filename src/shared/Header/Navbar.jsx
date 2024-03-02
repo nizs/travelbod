@@ -11,6 +11,7 @@ const Navbar = () => {
         <li className='mr-2 font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/tours'>Tours</Link></li>
         <li className='mr-2 font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/destinations'>Destination</Link></li>
         <li className='mr-2 font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/about'>About</Link></li>
+        <li className='font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/blogs'>Blog</Link></li>
         <li className='font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link>Contact</Link></li>
     </>
     const handleLogoutuser = () => {
