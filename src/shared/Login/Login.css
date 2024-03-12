@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1440px) {
+    .travelbod_login{
+        padding: 30px !important
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .travelbod_login{
+        padding: 30px !important
+    }
+}
+@media only screen and (max-width: 768px) {
+    .travelbod_login{
+        padding: 30px !important
+    }
+}
+@media only screen and (max-width: 425px) {
+    .travelbod_login{
+        padding: 30px !important
+    }
+}
+@media only screen and (max-width: 375px) {
+    .travelbod_login{
+        padding: 20px !important;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .travelbod_login{
+        padding: 5px !important
+    }
+    
+}

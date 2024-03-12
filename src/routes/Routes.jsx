@@ -14,6 +14,7 @@ import Bookings from "../pages/bookings/Bookings/Bookings";
 import Testimonials from "../pages/testimonials/Testimonials/Testimonials";
 import Blogs from "../pages/blogs/Blogs/Blogs";
 import BlogD from "../pages/blogs/Blogs/BlogD";
+import AddTour from "../pages/addTour/AddTour";
 
 
 const router = createBrowserRouter([
@@ -53,12 +54,16 @@ const router = createBrowserRouter([
             },
             {
                 path: 'destinations/:name',
-                element: <PrivateRoute><DesTours /></PrivateRoute>,
+                element: <DesTours />,
                 loader: ({ params }) => fetch(`http://localhost:5000/destinations/${params.name}`)
             },
             {
                 path: 'bookings',
                 element: <PrivateRoute><Bookings /></PrivateRoute>
+            },
+            {
+                path: 'addtour',
+                element: <PrivateRoute><AddTour /></PrivateRoute>
             },
             {
                 path: 'blogs',

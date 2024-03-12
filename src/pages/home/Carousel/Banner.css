@@ -1,0 +1,17 @@
+
+@media only screen and (max-width: 425px) {
+    .banner_para{
+        display: block !important;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .banner_para{
+        display: block !important;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .banner_para{
+        display: none !important;
+    }
+    
+}

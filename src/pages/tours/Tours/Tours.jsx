@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Tour from '../Tour/Tour';
+import '../../bookings/Bookings/Bookings.css'
 
 const Tours = () => {
     const [tours, setTours] = useState([]);
@@ -9,7 +10,7 @@ const Tours = () => {
             .then(data => setTours(data))
     }, [])
     return (
-        <div className='py-16 container mx-auto'>
+        <div className='py-16 container mx-auto section-back'>
             <div className='text-center'>
                 <h3 className='text-1xl font-bold text-[#64ab45] bg-[#dde5da] px-4 py-2 w-2/3 md:w-1/3 mx-auto rounded'>Featured tours</h3>
                 <h1 className="my-8 text-3xl md:text-5xl font-bold">Amazing tour places around the <span className='text-[#64ab45]'>world</span></h1>

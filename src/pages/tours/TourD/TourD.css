@@ -1,0 +1,10 @@
+@media only screen and (max-width: 375px) {
+    .travel_social {
+      margin-top: 1rem ;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .travel_social {
+      margin-top: 1rem ;
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Destination from './Destination';
+import '../../bookings/Bookings/Bookings.css'
 
 const Destinations = () => {
     const [destinations, setDestinations] = useState([]);
@@ -12,7 +13,7 @@ const Destinations = () => {
             .then(data => setDestinations(data))
     }, [])
     return (
-        <div className='py-16 container mx-auto'>
+        <div className='py-16 container mx-auto section-back'>
             <div className='text-center'>
                 <h3 className='text-1xl font-bold text-[#64ab45] bg-[#dde5da] px-4 py-2 w-2/3 md:w-1/3 mx-auto rounded'>Destination lists
 </h3>

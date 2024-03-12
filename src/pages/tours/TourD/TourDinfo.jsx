@@ -36,7 +36,7 @@ const TourDinfo = ({ details }) => {
                                 <p className='text-[#82828A] text-[17px]'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore quasi architecto beatae vitae dicta.</p>
                             </div>
                         </div>
-                        <div className=''>
+                        <div className='w-full'>
                             <img className='' src={img} alt="tour_description_img" />
                         </div>
                     </div>

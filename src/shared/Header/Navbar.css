@@ -1,0 +1,19 @@
+
+@media only screen and (max-width: 425px) {
+    .travelbod_logo {
+      max-width: 200%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .travelbod_logo {
+      /* max-width: 300%; */
+    }
+}
+@media only screen and (max-width: 320px) {
+    .travelbod_logo {
+      max-width: 300%;
+    }
+    .mg_glass{
+      display: none;
+    }
+}

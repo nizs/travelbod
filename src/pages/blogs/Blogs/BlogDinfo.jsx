@@ -10,7 +10,7 @@ const BlogDinfo = ({ details }) => {
         <div className='grid md:grid-cols-3 gap-4 mx-4 py-16 md:mx-8'>
             <div className='md:col-span-3 lg:col-span-2'>
                 {/* title, img & tour description */}
-                <div className=''>
+                <div>
                     <img className='' src={blogdimg} alt="blog_feature_img" />
                 </div>
                 <div className='flex items-center my-4'>
@@ -39,7 +39,7 @@ const BlogDinfo = ({ details }) => {
                         </div>
                     </div>
                     <div className=''>
-                        <img className='' src={img} alt="tour_description_img" />
+                        <img className='w-full' src={img} alt="tour_description_img" />
                     </div>
                 </div>
                 <div className='bg-[#f4fff4] text-[22px] p-8 my-8 font-semibold border-l-2 border-[#64ab45]'>

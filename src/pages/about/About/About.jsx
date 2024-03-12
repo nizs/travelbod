@@ -9,7 +9,7 @@ import Testimonials from '../../testimonials/Testimonials/Testimonials';
 const About = () => {
     return (
         <>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen bg-base-200 py-8">
                 <div className="hero-content flex-col lg:flex-row">
                     <div className='relative lg:w-1/2'>
                         <img className='rounded-tr-[64px] w-full px-4 h-[300px] md:h-[500px]' src={aboutimg1} alt="aboutimg1" />

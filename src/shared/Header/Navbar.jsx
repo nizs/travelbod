@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../../../../project_plan/project_images/TravelBod_logo.svg';
 import { AuthContext } from '../provider/AuthProvider';
 import { FaRegUserCircle } from "react-icons/fa";
+import './Navbar.css'
 
 const Navbar = () => {
     const { user, logoutUser } = useContext(AuthContext);
@@ -29,9 +29,9 @@ const Navbar = () => {
                             {menuitem}
                         </ul>
                     </div>
-                    <div className='flex items-center'>
-                        <img className='w-20' src={logo} alt="TravelBod_Logo" />
-                        <Link to='/' className=" text-[#64ab45] font-bold text-xl hidden md:inline-flex">TravelBod</Link>
+                    <div className='flex items-center ms-2'>
+                        <img className='travelbod_logo' src='https://i.ibb.co/375JwB0/Travel-Bod-Logo.png' alt="TravelBod_Logo" />
+                        {/* <Link to='/' className=" text-[#64ab45] font-bold text-xl hidden md:inline-flex">TravelBod</Link> */}
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -40,7 +40,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex">
-                    <button className="btn btn-ghost btn-circle">
+                    <button className="btn btn-ghost btn-circle mg_glass">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                     </button>
                 </div>
@@ -63,6 +63,9 @@ const Navbar = () => {
                                     <Link to='/bookings'>
                                         <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>My Bookings</a></li>
                                     </Link>
+                                    <Link to='/addtour'>
+                                        <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Create Tour</a></li>
+                                    </Link>
                                     <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Settings</a></li>
                                     <li onClick={handleLogoutuser} className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Logout</a></li>
                                 </ul>
@@ -70,7 +73,9 @@ const Navbar = () => {
                             :
                             <div className='flex'>
                                 <div className="rounded-full flex justify-center items-center">
-                                    <FaRegUserCircle className='text-3xl text-[#64ab45] mx-2' />
+                                    <div className='p-4 bg-[#e3ffd7] rounded-full me-2 py-[8px] px-[0px] bg-[#eaffe0]'>
+                                        <FaRegUserCircle className='text-3xl text-[#64ab45] mx-2' />
+                                    </div>
                                     <Link to='/login'>
                                         <button className="btn text-white text-[17px] bg-[#64ab45] hover:bg-[#82d75d]">Login</button>
                                     </Link>

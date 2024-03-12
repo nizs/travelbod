@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { GoogleAuthProvider } from 'firebase/auth';
 import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
 import { AuthContext } from '../provider/AuthProvider';
+import './Login.css'
 
 const Login = () => {
     const [error, setError] = useState([null]);
@@ -79,7 +80,7 @@ const Login = () => {
                         </div>
                         <span className='text-red-700'>{error}</span>
                     </form>
-                    <div className='px-8'>
+                    <div className='travelbod_login'>
                         <div className='flex items-center py-5'>
                             <div className='border w-1/2'></div>
                             <div className='mx-2'>or</div>

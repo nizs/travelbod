@@ -17,7 +17,7 @@ const BlogD = () => {
 
     return (
         <div>
-            {/* header and price */}
+            {/* Blog header */}
             <div className='flex flex-col items-center md:p-8 bg-[#F3F8F6] backimg'>
                 <h1 className='text-[22px] md:text-[28px] font-bold text-white text-center'>{title}</h1>
                 <p className='text-white font-bold mt-4'>Blogs / {category}</p>

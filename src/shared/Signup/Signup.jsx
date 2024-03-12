@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
 import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
+import '../Login/login.css';
 
 const Signup = () => {
     const { createUser, loginProvider, updateUserProfile } = useContext(AuthContext);
@@ -105,7 +106,7 @@ const Signup = () => {
                             <button type='submit' className="btn text-white text-[17px] bg-[#64ab45] hover:bg-[#82d75d]">Sign up</button>
                         </div>
                     </form>
-                    <div className='px-8'>
+                    <div className='travelbod_login'>
                         <div className='flex items-center py-5'>
                             <div className='border w-1/2'></div>
                             <div className='mx-2'>or</div>

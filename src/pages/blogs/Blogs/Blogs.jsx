@@ -8,6 +8,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
 import './Blogs.css';
+import '../../bookings/Bookings/Bookings.css';
 
 const Blogs = () => {
     const [Blogs, setBlogs] = useState([]);
@@ -17,7 +18,7 @@ const Blogs = () => {
             .then(data => setBlogs(data))
     }, [])
     return (
-        <div className='py-16 mx-2 md:mx-4'>
+        <div className='py-16 mx-2 md:mx-4 section-back'>
             <div className='text-center'>
                 <h3 className='text-1xl font-bold text-[#64ab45] bg-[#dde5da] px-4 py-2 w-2/3 md:w-1/3 mx-auto rounded'>Featured Blogs</h3>
                 <h1 className="my-8 text-3xl md:text-5xl font-bold">Amazing News & <span className='text-[#64ab45]'>Blogs</span> For Every Single Update</h1>
