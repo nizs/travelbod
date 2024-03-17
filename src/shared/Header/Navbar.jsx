@@ -12,7 +12,7 @@ const Navbar = () => {
         <li className='mr-2 font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/destinations'>Destination</Link></li>
         <li className='mr-2 font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/about'>About</Link></li>
         <li className='font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/blogs'>Blog</Link></li>
-        <li className='font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link>Contact</Link></li>
+        <li className='font-bold text-base text-[#64ab45] hover:text-white hover:bg-[#64ab45] hover:rounded'><Link to='/contact'>Contact</Link></li>
     </>
     const handleLogoutuser = () => {
         logoutUser();
@@ -30,7 +30,9 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='flex items-center ms-2'>
-                        <img className='travelbod_logo' src='https://i.ibb.co/375JwB0/Travel-Bod-Logo.png' alt="TravelBod_Logo" />
+                        <Link to='/'>
+                            <img className='travelbod_logo' src='https://i.ibb.co/375JwB0/Travel-Bod-Logo.png' alt="TravelBod_Logo" />
+                        </Link>
                         {/* <Link to='/' className=" text-[#64ab45] font-bold text-xl hidden md:inline-flex">TravelBod</Link> */}
                     </div>
                 </div>
@@ -54,19 +56,19 @@ const Navbar = () => {
                                     </div>
                                 </div>
                                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 w-52">
-                                    <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'>
+                                    {/* <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'>
                                         <a className="justify-between">
                                             Profile
                                             <span className="badge">New</span>
                                         </a>
-                                    </li>
+                                    </li> */}
                                     <Link to='/bookings'>
                                         <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>My Bookings</a></li>
                                     </Link>
                                     <Link to='/addtour'>
                                         <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Create Tour</a></li>
                                     </Link>
-                                    <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Settings</a></li>
+                                    {/* <li className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Settings</a></li> */}
                                     <li onClick={handleLogoutuser} className='hover:text-white hover:bg-[#64ab45] hover:rounded'><a>Logout</a></li>
                                 </ul>
                             </>

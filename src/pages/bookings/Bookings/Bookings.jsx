@@ -65,9 +65,9 @@ const Bookings = () => {
     return (
         <div className="overflow-x-auto md:p-16 section-back">
             <div className='text-center'>
-                <h1 className="mt-0 mb-8 text-3xl md:text-5xl font-bold">My <span className='text-[#64ab45]'>Bookings</span></h1>
+                <h1 className=" mt-5 text-3xl md:text-5xl font-bold">My <span className='text-[#64ab45]'>Bookings</span></h1>
             </div>
-            <div className='py-16 container mx-auto'>
+            <div className='py-12 container mx-auto'>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 px-4'>
                     {
                         bookings.map(booking => <Booking
@@ -79,7 +79,7 @@ const Bookings = () => {
                     }
                 </div>
             </div>
-            <div className='text-center my-4'>
+            <div className='text-center my-8'>
                 <Link to='/home'>
                     <button className="btn text-white bg-[#64ab45] border-0 hover:border-[#64ab45] text-[#64ab45] hover:bg-[#82d75d]">
                         <FaArrowLeft />

@@ -12,10 +12,10 @@ import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 import Checkout from '../../checkout/Checkout/Checkout';
 
 const TourDinfo = ({ details }) => {
-    const { _id, img, include1, include2, include3, include4, Exclude1, Exclude2, Exclude3, Exclude4, Cards, parking, coupons, reservations, restaurant, smoking } = details;
+    const { _id, img,map, include1, include2, include3, include4, Exclude1, Exclude2, Exclude3, Exclude4, Cards, parking, coupons, reservations, restaurant, smoking } = details;
     
     return (
-        <div className='grid md:grid-cols-3 gap-4 px-4 py-16 md:px-8'>
+        <div className='grid md:grid-cols-3 gap-4 px-4 py-8 md:py-16 md:px-8'>
             <div className='md:col-span-3 lg:col-span-2'>
                 {/* title & tour description */}
                 <div>
@@ -82,7 +82,7 @@ const TourDinfo = ({ details }) => {
                 {/* Tour Accordion */}
                 <div>
                     <h3 className='text-3xl font-bold my-8'>Tour Plan</h3>
-                    <div className="collapse collapse-arrow bg-base-200 mb-6 ">
+                    <div className="collapse collapse-arrow bg-[#f4fff4] mb-6 ">
                         <input type="radio" name="my-accordion-2" checked="checked" />
                         <div className="collapse-title text-xl font-medium">
                         Day 1st
@@ -91,7 +91,7 @@ const TourDinfo = ({ details }) => {
                             <p>Lorem ipsum dolor sit amet, utinam munere antiopam vel ad. Qui eros iusto te. Nec ad feugiat honestatis. Quo illum detraxit an. Ius eius quodsi molestiae at, nostrum definitiones his cu. Discere referrentur mea id, an pri novum possim deterruisset.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow bg-base-200 mb-6">
+                    <div className="collapse collapse-arrow bg-[#f4fff4] mb-6">
                         <input type="radio" name="my-accordion-2" />
                         <div className="collapse-title text-xl font-medium">
                         Day 2nd
@@ -100,7 +100,7 @@ const TourDinfo = ({ details }) => {
                             <p>Lorem ipsum dolor sit amet, utinam munere antiopam vel ad. Qui eros iusto te. Nec ad feugiat honestatis. Quo illum detraxit an. Ius eius quodsi molestiae at, nostrum definitiones his cu. Discere referrentur mea id, an pri novum possim deterruisset.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow bg-base-200">
+                    <div className="collapse collapse-arrow bg-[#f4fff4]">
                         <input type="radio" name="my-accordion-2" />
                         <div className="collapse-title text-xl font-medium">
                         Day 3rd
@@ -113,7 +113,7 @@ const TourDinfo = ({ details }) => {
                 {/* Tour Location */}
                 <div>
                     <h3 className='text-3xl font-bold my-8'>Location</h3>
-                    <iframe className='w-full' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.670397597713!2d-73.9906705!3d40.7032562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a31142b2c19%3A0xa192819c77f4c7a5!2sMain%20St%2C%20Brooklyn%2C%20NY%2011201%2C%20USA!5e0!3m2!1sen!2sbd!4v1706169483253!5m2!1sen!2sbd" height="400" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe className='w-full' src={map} height="400" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             

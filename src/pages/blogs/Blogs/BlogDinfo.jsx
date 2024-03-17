@@ -7,7 +7,7 @@ const BlogDinfo = ({ details }) => {
     const { _id, title, category, author, comments, date, img, description, blogdimg } = details;
 
     return (
-        <div className='grid md:grid-cols-3 gap-4 mx-4 py-16 md:mx-8'>
+        <div className='grid md:grid-cols-3 gap-4 mx-4 py-16 md:px-8'>
             <div className='md:col-span-3 lg:col-span-2'>
                 {/* title, img & tour description */}
                 <div>
@@ -23,7 +23,7 @@ const BlogDinfo = ({ details }) => {
                     <h2 className='text-3xl font-bold my-4'>{title}</h2>
                     <p className='text-[#82828A] text-[17px]'>Sed ut perspiciatis unde omniste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ip quae abillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit.</p>
                 </div>
-                <div className='grid sm:grid-cols-1 lg:grid-cols-2 lg:grid-cols-2 gap-4 my-4'>
+                <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-4 my-4'>
                     <div>
                         <div>
                             <h3 className='text-2xl font-bold'>Build camping easily.</h3>
@@ -61,13 +61,13 @@ const BlogDinfo = ({ details }) => {
                 {/* about admin */}
                 <div className=''>
                     <div className='my-12 md:flex justify-between items-center'>
-                        <div>
+                        <div className='flex items-center justify-around'>
                             <span className='font-bold text-[18px]'>Tags:</span>
-                            <span className='text-[14px] font-bold ml-4 bg-[#ecf7ec] px-4 py-2 hover:bg-[#64ab45] hover:text-white cursor-pointer'>Adventure</span>
-                            <span className='text-[14px] font-bold ml-4 bg-[#ecf7ec] px-4 py-2 hover:bg-[#64ab45] hover:text-white cursor-pointer'>Natural</span>
-                            <span className='text-[14px] font-bold ml-4 bg-[#ecf7ec] px-4 py-2 hover:bg-[#64ab45] hover:text-white cursor-pointer'>Policy</span>
+                            <span className='text-[14px] font-bold md:ml-4 bg-[#ecf7ec] px-2 md:px-4 py-2 hover:bg-[#64ab45] hover:text-white cursor-pointer'>Adventure</span>
+                            <span className='text-[14px] font-bold md:ml-4 bg-[#ecf7ec] px-2 md:px-4 py-2 hover:bg-[#64ab45] hover:text-white cursor-pointer'>Natural</span>
+                            <span className='text-[14px] font-bold md:ml-4 bg-[#ecf7ec] px-2 md:px-4 py-2 hover:bg-[#64ab45] hover:text-white cursor-pointer'>Policy</span>
                         </div>
-                        <div className='mt-8 md:mt-0'>
+                        <div className='flex items-center justify-around mt-8 md:mt-0'>
                             <span className='inline-block bg-[#ecf7ec] p-3.5 rounded-full  mr-4 hover:bg-[#64ab45] hover:text-white cursor-pointer'>
                                 <FaFacebookF className='text-[14px] ' />
                             </span>

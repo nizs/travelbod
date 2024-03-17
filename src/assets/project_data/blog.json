@@ -1,0 +1,81 @@
+[
+    {
+        "title": "A Place Where Start New Life With Adventure Travel",
+        "category": "City Tours",
+        "author": "admin",
+        "comments": "0",
+        "date": {
+            "day": "01",
+            "month": "jan"
+        },
+        "img": "https://i.ibb.co/y448PBn/blog-preview-1.jpg",
+        "description": "The greatest reward and luxury of travel is to be able to experience everyday things as if for the first time.",
+        "blogdimg": "https://i.ibb.co/zXXMZmx/blog-details-01.jpg"
+    },
+    {
+        "title": "Travel The Most Beautiful Places In The World",
+        "category": "Life Style",
+        "author": "admin",
+        "comments": "0",
+        "date": {
+            "day": "03",
+            "month": "jan"
+        },
+        "img": "https://i.ibb.co/dg4rXYT/blog-preview-2.jpg",
+        "description": "It is only in adventure that some people succeed in knowing themselves in finding themselves.",
+        "blogdimg": "https://i.ibb.co/JzLsjps/blog-details-02.jpg"
+        
+    },
+    {
+        "title": "Top 10 Destinations & Adventure Travel Trips",
+        "category": "Wild Camping",
+        "author": "admin",
+        "comments": "0",
+        "date": {
+            "day": "07",
+            "month": "jan"
+        },
+        "img": "https://i.ibb.co/RYdZ1Gj/blog-preview-3.jpg",
+        "description": "To awaken quite alone in a strange town is one of the pleasantest sensations in the world.",
+        "blogdimg": "https://i.ibb.co/fdwDmCV/blog-details-03.jpg"
+    },
+    {
+        "title": "The Surfing Man Will Adventure Your Mind",
+        "category": "Life Style",
+        "author": "admin",
+        "comments": "0",
+        "date": {
+            "day": "04",
+            "month": "Feb"
+        },
+        "img": "https://i.ibb.co/bNJs0DZ/blog-preview-4.jpg",
+        "description": "An understanding of the natural world and what’s in it is a source of not only a great curiosity but great fulfilment.",
+        "blogdimg": "https://i.ibb.co/L0zDrJC/blog-details-04.jpg"
+    },
+    {
+        "title": "Things To See And Do When Visiting Japan",
+        "category": "Adventure",
+        "author": "admin",
+        "comments": "0",
+        "date": {
+            "day": "08",
+            "month": "Feb"
+        },
+        "img": "https://i.ibb.co/PtD5Hjr/blog-preview-5.jpg",
+        "description": "Once the travel bug bites there is no known antidote, and I know that I shall be happily infected until the end of my life.",
+        "blogdimg": "https://i.ibb.co/ScZgr5M/blog-details-05.jpg"
+    },
+    {
+        "title": "Journeys Are Best Measured With Friends",
+        "category": "Life Style",
+        "author": "admin",
+        "comments": "0",
+        "date": {
+            "day": "14",
+            "month": "Feb"
+        },
+        "img": "https://i.ibb.co/xJn3fHf/blog-preview-6.jpg",
+        "description": "Our happiest moments as tourists always seem to come when we stumble upon one thing while in pursuit of something else.",
+        "blogdimg": "https://i.ibb.co/k2kzNn5/blog-details-06.jpg"
+    }
+]

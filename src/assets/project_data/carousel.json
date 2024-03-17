@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "previd": "3",
+        "nextid": "2",
+        "heading":"Tour Travel & Adventure Camping",
+        "subheading": "Blessed are the curious for they shall have adventures",
+        "img": "https://i.ibb.co/2ggVX2F/carousel-img-1.jpg"
+    },
+    {
+        "id": "2",
+        "previd": "1",
+        "nextid": "3",
+        "heading":"Your Journey Begins Here",
+        "subheading": "It’s not what you look at that matters. It’s what you see",
+        "img": "https://i.ibb.co/F8Cb2SJ/carousel-img-2.jpg"
+    },
+    {
+        "id": "3",
+        "previd": "2",
+        "nextid": "1",
+        "heading":"Travel With Us",
+        "subheading": "We Takes Care of your Travel",
+        "img": "https://i.ibb.co/qkd5dYm/carousel-img-3.jpg"
+    }
+]

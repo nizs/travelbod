@@ -1,0 +1,34 @@
+[
+    {
+        "testimonial_id":"1",
+        "name":"Cristen Eve",
+        "img":"https://i.ibb.co/GH3Df6R/testimonials-01.jpg",
+        "designation":"Analyst",
+        "review":"Our Exploring Sicily trip combined extraordinary guides, a carefully organized itinerary, lovely accommodations and meals to make a very special trip. In addition, the small size and multi-national composition of the group enhanced the experience. We miss our travel family!"
+
+    },
+    {
+        "testimonial_id":"2",
+        "name":"Laura",
+        "img":"https://i.ibb.co/VmZJsy2/testimonials-03.jpg",
+        "designation":"Engineer",
+        "review":"When you sign up for a 'gulet tour' you have to understand that just by the very nature of the trip, on a Turkish Gulet, you will not be traveling on a 'luxurious' cruise by the behemoth tour ships' standards."
+
+    },
+    {
+        "testimonial_id":"3",
+        "name":"Dave",
+        "img":"https://i.ibb.co/J36zNyZ/testimonials-02.jpg",
+        "designation":"Developer",
+        "review":"This was a superb tour... beautifully crafted, taking us through the long history of the island and travelling from the arid East to the green West. The accommodation was wonderful and the food/wine experiences truly memorable."
+
+    },
+    
+    {
+        "testimonial_id":"4",
+        "name":"Kate",
+        "img":"https://i.ibb.co/Jm9wVjS/testimonials-04.jpg",
+        "designation":"Engineer",
+        "review":"This was the first time I had travelled with TravelBod. The company specialises in expert-led cultural and gulet tours in Europe. Group numbers are small, accommodation comfortable and food excellent. The expert guide who accompanied us was outstanding - passionate, informative, engaging and entertaining."
+    }
+]

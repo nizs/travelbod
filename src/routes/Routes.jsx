@@ -15,6 +15,7 @@ import Testimonials from "../pages/testimonials/Testimonials/Testimonials";
 import Blogs from "../pages/blogs/Blogs/Blogs";
 import BlogD from "../pages/blogs/Blogs/BlogD";
 import AddTour from "../pages/addTour/AddTour";
+import Contact from "../pages/contact/Contact/Contact";
 
 
 const router = createBrowserRouter([
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
                 path: 'blogs/:id',
                 element: <BlogD />,
                 loader: ({ params }) => fetch(`http://localhost:5000/blogs/${params.id}`)
+            },
+            {
+                path: 'contact',
+                element: <Contact />
             },
             {
                 path: 'signup',

@@ -47,7 +47,7 @@ const Checkout = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-[#f4fff4]">
             <div className="w-full md:p-6">
                 <div className=' border-l-2 border-[#64ab45]'>
                     <h1 className="my-8 ml-2 text-3xl md:text-2xl font-bold">Book Your <span className='text-[#64ab45]'>Tour</span></h1>

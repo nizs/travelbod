@@ -8,6 +8,7 @@ import { Navigation } from 'swiper/modules';
 import './Testimonials.css';
 import { FaQuoteRight } from "react-icons/fa";
 import ReactStars from "react-rating-stars-component";
+import { motion } from "framer-motion"
 
 const Testimonials = () => {
     const [testimonials, setTestimonials] = useState([]);
@@ -21,11 +22,64 @@ const Testimonials = () => {
         <div className='bg-base-200'>
             <div className='py-16 container mx-auto grid lg:grid-cols-2 gap-8 px-4'>
                 <div className='flex flex-col justify-center'>
-                    <h3 className='text-1xl font-bold text-[#64ab45] bg-[#dde5da] px-4 py-2 w-2/3 md:1/3 rounded'>Our testimonials</h3>
-                    <h1 className="my-8 text-3xl md:text-5xl font-bold">What they’re talking about our policy</h1>
-                    <p className="text-[#82828A]">Our Client valuable reviews are the jems of TravelBod, Which makes us more connected towards You.</p>
+                    <motion.h3
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            delay: 0.2,
+                            x: { type: "spring", stiffness: 60 },
+                            opacity: { duration: 0.6 },
+                            ease: "easeIn",
+                            duration: 1
+                        }}
+                        className='text-1xl font-bold text-[#64ab45] bg-[#dde5da] px-4 py-2 w-2/3 md:1/3 rounded'
+                    >
+                        Our testimonials
+                    </motion.h3>
+                    <motion.h1
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            delay: 0.3,
+                            x: { type: "spring", stiffness: 60 },
+                            opacity: { duration: 0.6 },
+                            ease: "easeIn",
+                            duration: 1
+                        }}
+                        className="my-8 text-3xl md:text-5xl font-bold"
+                    >
+                        What they’re talking about our policy
+                    </motion.h1>
+                    <motion.p
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            delay: 0.4,
+                            x: { type: "spring", stiffness: 60 },
+                            opacity: { duration: 0.6 },
+                            ease: "easeIn",
+                            duration: 1
+                        }}
+                        className="text-[#82828A]"
+                    >
+                        Our Client valuable reviews are the jems of TravelBod, Which makes us more connected towards You.
+                    </motion.p>
                     <Link to='/testimonials'>
-                        <button className="btn text-white text-[17px] bg-[#64ab45] hover:bg-[#82d75d] my-6">All Testimonials</button>
+                        <motion.button
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: 0.5,
+                                x: { type: "spring", stiffness: 60 },
+                                opacity: { duration: 0.6 },
+                                ease: "easeIn",
+                                duration: 1
+                            }}
+                            className="btn text-white text-[17px] bg-[#64ab45] hover:bg-[#82d75d] my-6">All Testimonials</motion.button>
                     </Link>
                 </div>
                 <Swiper

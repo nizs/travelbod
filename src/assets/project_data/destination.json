@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "name": "Italy",
+        "img": "https://i.ibb.co/JvqWvDP/destination-italy.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Switzerland",
+        "img": "https://i.ibb.co/WHh4fKV/destination-switzerland.jpg"
+    },
+    {
+        "id": "3",
+        "name": "France",
+        "img": "https://i.ibb.co/NyzBYn5/destination-france.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Thialand",
+        "img": "https://i.ibb.co/8Nz9YL7/destination-thailand.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Singapore",
+        "img": "https://i.ibb.co/g6YdC3Q/destination-singapore.jpg"
+    },
+    {
+        "id": "6",
+        "name": "USA",
+        "img": "https://i.ibb.co/H4Zqstz/destination-honolulu-usa.jpg"
+    },
+    {
+        "id": "0",
+        "name": "Every Destination",
+        "img": "https://i.ibb.co/zn84GRh/destination-gloabal.jpg"
+    }
+]
