@@ -34,7 +34,7 @@
   
    * Html(Jsx) , Css , JavaScript
    * Libraries: 
-        (TilwindCss, 
+        (TailwindCss, 
         JavaScript React, 
         DaisyUI, 
         ReactIcons, 
