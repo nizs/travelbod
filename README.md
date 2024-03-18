@@ -1,20 +1,19 @@
-# TravelBod
 
+# TravelBod
 
 * Live Website Link :  https://travelbod-c5a35.web.app
 * TravelBod Server Repo :  https://github.com/nizs/travelbod_server
 
+
 # FEATURES
   * Tour Booking
-  * Blog Posts
   * Add your Tour
   * User's Booked Tour List
   * Testimonials
   * Desired Destination Location's
   * Responsiveness in any device
- 
- 
- 
+
+  
  # FUNCTIONALITY
    
    * We have a dynamic navbar from where user can access all the routes and explore whole website.
@@ -31,18 +30,16 @@
    * user can Confirm or delete their bookings from My booking page.
 
 
-
-  
   # TECHNOLOGIES
   
    * Html(Jsx) , Css , JavaScript
    * Libraries: 
-       TilwindCss, 
-       JavaScript React, 
-       DaisyUI, 
-       ReactIcons, 
-       SwiperJS, 
-       FramerMotion 
+       => TilwindCss, 
+       => JavaScript React, 
+       => DaisyUI, 
+       => ReactIcons, 
+       => SwiperJS, 
+       => FramerMotion 
   * React Router
   * React AuthContext
   * FireBase (For Authentication and Hosting client side)
