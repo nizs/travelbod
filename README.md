@@ -34,12 +34,12 @@
   
    * Html(Jsx) , Css , JavaScript
    * Libraries: 
-       => TilwindCss, 
-       => JavaScript React, 
-       => DaisyUI, 
-       => ReactIcons, 
-       => SwiperJS, 
-       => FramerMotion 
+        (TilwindCss, 
+        JavaScript React, 
+        DaisyUI, 
+        ReactIcons, 
+        SwiperJS, 
+        FramerMotion)
   * React Router
   * React AuthContext
   * FireBase (For Authentication and Hosting client side)
