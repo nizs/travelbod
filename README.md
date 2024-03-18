@@ -25,7 +25,7 @@
 
    * In our Blog details page, we have our side bar filled with blog posts and these posts are dynamic as well and by clicking it the blog detail page will open of it's own.
 
-   * We have our Destination's according to our category and we have our Sub header which show's county name according to our Destination's category.
+   * We have our Destination's according to our category and we have our Sub header which show's country name according to our Destination's category.
 
    * user can Confirm or delete their bookings from My booking page.
 
