@@ -1,7 +1,7 @@
 
 # TravelBod
 
-* Live Website Link :  https://travelbod-c5a35.web.app
+* Live Website(TravelBod) Link :  https://travelbod-c5a35.web.app
 * TravelBod Server Repo :  https://github.com/nizs/travelbod_server
 
 
