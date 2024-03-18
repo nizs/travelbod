@@ -44,6 +44,7 @@
   * React AuthContext
   * FireBase (For Authentication and Hosting client side)
   * Vercel (For deploying server side)
+  * Node JS
   * Express JS
   * MongoDB
     
