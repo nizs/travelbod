@@ -47,5 +47,7 @@
   * Node JS
   * Express JS
   * MongoDB
+
+    => Recommends to signup with email and password to have the booking data on my bookings 
     
 
